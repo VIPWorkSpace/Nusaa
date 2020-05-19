@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_Masuk;
     private FirebaseAuth.AuthStateListener mAuthListener;
     FirebaseAuth mAuth;
-    //tescommit
+    //tescommit dong
     SharedPreferences sharedPreferences;
     String userIdKey = "";
     String userId = "";
