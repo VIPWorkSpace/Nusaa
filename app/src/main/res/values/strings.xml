@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NusaLicious</string>
+    <string name="pesanan">Pesanan</string>
+    <string name="beranda">Beranda</string>
+    <string name="akun">Akun</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Phone">Telepon</string>
+    <string name="password">Kata Sandi</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+    <!--Button Clicked-->
+    <style name="buttonstyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#000</item>
+        <item name="colorButtonNormal">#BC2E2E</item>
+    </style>
+    <style name="outlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#D6D6D6</item>
+    </style>
+    <style name="progressTheme">
+        <item name="colorAccent">@color/colorProgressbar</item>
+    </style>
+
+</resources>

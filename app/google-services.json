@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "243753256377",
+    "firebase_url": "https://societybeta-dd634.firebaseio.com",
+    "project_id": "societybeta-dd634",
+    "storage_bucket": "societybeta-dd634.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243753256377:android:7e5951eaf617e5fb2a2268",
+        "android_client_info": {
+          "package_name": "com.workspace.societybeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243753256377-sc8d7v76f7dm2vkbjhcsf3itlgi1p96e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDebkWgkc-HT194zCxyHgUiQ-thq5Q8XrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243753256377-sc8d7v76f7dm2vkbjhcsf3itlgi1p96e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

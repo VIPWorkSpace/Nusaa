@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.workspace.NusaLicious.nasDetail">
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Judul"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageV"
+        app:layout_constraintStart_toStartOf="@+id/imageV"
+        app:layout_constraintTop_toBottomOf="@+id/imageV" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/AbuMuda"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJudul">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Deskripsi"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/shape_line" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Deskripsi 2"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rp."
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/jmlHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="20000"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/btnMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:text="-"
+        android:textColor="#000"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/btnPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="92dp"
+        android:text="+"
+        android:textColor="#000"
+        android:textSize="50sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/jmlBeli"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="36dp"
+        android:text="40"
+        android:textColor="#000"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+        app:layout_constraintStart_toEndOf="@+id/btnMin"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Beli"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/shape_order"
+        android:text="BELI"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

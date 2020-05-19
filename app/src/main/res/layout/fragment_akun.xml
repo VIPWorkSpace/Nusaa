@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.workspace.NusaLicious.fragments.Akun">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="@color/Abu"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:text="Data Akun"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/shape_line" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Nama Penerima" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Alamat" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Nomor Telp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/btn_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_login"
+                android:text="Keranjang"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/asd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_login"
+                android:text="Save"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_Keluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Merah"
+        android:text="Keluar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
