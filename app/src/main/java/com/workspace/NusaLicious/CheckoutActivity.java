@@ -7,9 +7,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +28,7 @@ import java.util.ArrayList;
 
 public class CheckoutActivity extends AppCompatActivity {
     DatabaseReference referenceChart;
+
     RecyclerView recyclerViewChart;
     ArrayList<ChartModel> list;
     ChartAdapter chartAdapter;
@@ -80,7 +86,6 @@ public class CheckoutActivity extends AppCompatActivity {
 
     }
 
-
     public void getUsernameLocal() {
 
         SharedPreferences sharedPreferences = getSharedPreferences(userIdKey, MODE_PRIVATE);
@@ -88,3 +93,4 @@ public class CheckoutActivity extends AppCompatActivity {
 
     }
 }
+
