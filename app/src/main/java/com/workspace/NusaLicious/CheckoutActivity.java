@@ -7,9 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,13 +25,14 @@ import com.workspace.societybeta.R;
 import java.util.ArrayList;
 
 public class CheckoutActivity extends AppCompatActivity {
-    DatabaseReference referenceChart;
+    DatabaseReference referenceChart, referenceDelete;
     RecyclerView recyclerViewChart;
     ArrayList<ChartModel> list;
     ChartAdapter chartAdapter;
     private Integer totalChart = 0;
     String userIdKey = "";
     String userId = "";
+    Button btn_clear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +40,31 @@ public class CheckoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_checkout);
         getUsernameLocal();
         EditText name = findViewById(R.id.name);
-
+        btn_clear = findViewById(R.id.btn_clear);
         recyclerViewChart = findViewById(R.id.CheckoutRecycler);
         recyclerViewChart.setHasFixedSize(true);
         recyclerViewChart.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<ChartModel>();
 
+        btn_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                referenceDelete = FirebaseDatabase.getInstance().getReference().child("Keranjang").child(userId);
+            referenceDelete.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
+                        dataSnapshot.getRef().removeValue();
+                    }
+                }
 
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+            }
+        });
         referenceChart = FirebaseDatabase.getInstance().getReference().child("Keranjang").child(userId);
         referenceChart.addValueEventListener(new ValueEventListener() {
             @Override
