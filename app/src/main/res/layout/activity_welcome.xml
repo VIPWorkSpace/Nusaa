@@ -56,5 +56,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="Admin?"
+        app:layout_constraintEnd_toStartOf="@+id/btn_admin"
+        app:layout_constraintTop_toTopOf="@+id/btn_admin" />
+
+    <TextView
+        android:id="@+id/btn_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="click here"
+        android:textColor="@color/MerahMaroon"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

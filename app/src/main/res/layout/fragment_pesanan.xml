@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.workspace.NusaLicious.fragments.Pesanan">
 
-    <androidx.appcompat.widget.SearchView
+    <SearchView
         android:id="@+id/Searchv"
         android:layout_width="match_parent"
         android:layout_height="20dp" />
